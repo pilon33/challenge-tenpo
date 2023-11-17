@@ -1,0 +1,41 @@
+version: '1.0'
+
+services:
+  tenpo-api:
+    container_name: "challenge-tenpo"
+    build:
+      context: .
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/challenge_tenpo
+      - SPRING_DATASOURCE_USERNAME=test
+      - SPRING_DATASOURCE_PASSWORD=test
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - CACHE_HOST=redis
+      - CACHE_PORT=6379
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - './tenpo-api:/usr/src/tenpo-api'
+   
+      
+  postgres:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_USER=test
+      - POSTGRES_DB=challenge_tenpo
+  redis:
+    image: redis:5.0.5
+    restart: always
+    ports:
+      - "6380:6379"
+   
+
+
+        
+        
