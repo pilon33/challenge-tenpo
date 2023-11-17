@@ -34,7 +34,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"first\": 2.0,\r\n    \"second\": 3.0\r\n}",
+					"raw": "{\r\n    \"first\": 5.0,\r\n    \"second\": 5.0\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

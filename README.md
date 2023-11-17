@@ -35,12 +35,12 @@ Incluir errores http. Mensajes y descripciones para la serie 4XX.
 
 ### Clone 
 ```
-https://github.com/pilon33/challenge-tenpo-jfv.git
+https://github.com/pilon33/challenge-tenpo.git
 ```
 
 ### Build
 ```
-mvn clean istall
+mvn clean install
 ```
 
 ### Collection Postman
@@ -49,16 +49,21 @@ _Import postman collection from:_
 
 ...**src/main/resources/Tenpo Collection.postman_collection.json**
 
+![img.png](src/main/resources/images/img5.png)
+
 ### Execute
 ```
 docker-compose up --build
 ```
+![img.png](src/main/resources/images/img6.png)
+
+
 ### Images challenge example runnig  
 
-![img_3.png](src/main/resources/img_3.png)
+![img_3.png](src/main/resources/images/img_3.png)
 
-![img_4.png](src/main/resources/img_4.png)
+![img.png](src/main/resources/images/img4.png)
 
-![img_1.png](src/main/resources/img_1.png)
+![img_1.png](src/main/resources/images/img_1.png)
 
-![img.png](src/main/resources/img.png)
+![img.png](src/main/resources/images/img.png)
